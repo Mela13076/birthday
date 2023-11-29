@@ -21,19 +21,22 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Happy Birthday Bubba!</h1>
-      <img src= {present} onClick={playSongAndConfetti} alt="Present" width="300px"/>
-      <p>Click ME for a Suprise</p>
-      <audio id="birthdaySong" src="birthdaySong.mp3"></audio>
-      {/* {showImage && <img src="your-special-image.jpg" alt="Special Image" />} */}
-      {showModal && (
-        <div className="modal">
-          <div className="modal-content">
-            <span className="close" onClick={() => setShowModal(false)}>&times;</span>
-            <img src={ticket} alt="Special Image" width="1000px" />
+      <div className="content">
+        <h1>Happy Birthday Bubba!</h1>
+        <img src= {present} onClick={playSongAndConfetti} alt="Present" width="300px"/>
+        <p>Click ME for a Suprise</p>
+        <audio id="birthdaySong" src="birthdaySong.mp3"></audio>
+        {/* {showImage && <img src="your-special-image.jpg" alt="Special Image" />} */}
+        {showModal && (
+          <div className="modal">
+            <div className="modal-content">
+              <span className="close" onClick={() => setShowModal(false)}>&times;</span>
+              <img src={ticket} alt="Special Image" width="1000px" />
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
+      
 
         <div className="note">
           <h2>Special Note for My Special Love on Your Special Day </h2>

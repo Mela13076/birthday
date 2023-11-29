@@ -41,6 +41,7 @@
   cursor: pointer;
 }
 
-.note{
-  margin-top: 600px;
+.note,
+.content{
+  margin-top: 300px;
 }
